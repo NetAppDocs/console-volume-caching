@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+permalink: use/cache-create.html
+keywords: volume caching, Volume caching
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+---
+
+= Create a cache using volume caching
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a volume caching between Amazon FSx for ONTAP, Cloud Volumes ONTAP, and on-premises ONTAP with one or more source volumes from the source system as the cache source. You then choose the storage virtual machine for the cache volumes. 
+
+The cache volume can be on the same cluster or a different cluster than that of the source volume. The volumes you select to cache must belong to the same storage VM and the storage VMs must use the same protocols. 
+
+TIP: If volumes are not eligible for caching, they are greyed out so that you cannot select them. 
+
+You can enter the size for cache volumes as a percentage of source volume size. 
+
+NOTE: The IPSpace used by the cache volume depends on the IPSpace used by the source storage VM. 
+
+The cache volume name uses a suffix of `pass:macros[_cache]` added to the original volume name. 
+
+
+== Steps from the volume caching landing page
+
+. Log in to the NetApp Console. 
+. Select *Mobility* > *Volume caching* from the left navigation. 
++
+You'll land on the volume caching Dashboard page. When you first start with the volume caching option, you need to add the cache information. Later, the Dashboard appears instead and displays data about the caches. 
+
++
+NOTE: If you have not yet set up a NetApp Console agent, the option *Add a Console agent* appears instead of the *Add a cache*. In this case, you need to set up the Console agent first. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[NetApp Console Quick start^].
++
+image:landing-page.png[the landing page for volume caching]
++
+. Select *Add a cache*. 
+
+. In the Cache data page, select the system source and target cache and select *Start caching wizard*.
+
+. In the Configure your caches page, select the volume or volumes you want to cache. 
+
++
+NOTE: You can select up to 50 volumes.
+
+. Scroll down the page to make additional changes to the VM details or volume size. 
+. Enter the size for cache volumes as a percentage of the source volume size. 
++
+TIP: A good rule of thumb is that the cache volume size should be about 15% of the source volume size.
+
+. Check the *Cache access* box to replicate the NFS export policy rules and the SMB/CIFS share configuration from the source volume to the target cache volume. 
++
+Then the NFS export policy rules and SMB/CIFS share in the source volume will be replicated to the cache volume. If the SMB/CIFS protocol isn't enabled on the cache storage VM, the SMB/CIFS share will not replicate. 
+
+. Optionally, enter the cache name prefix. 
++
+The suffix of `pass:macros[_cache]` is appended to the name in the format: `<user-specified prefix>_<source volume name>_cache`
+
+
+
+. Select *Create caches*. 
++
+The new cache appears on the Caching list. The cache volume name will show `pass:macros[_cache]` as a suffix to the source volume name. 
+
+. To see the progress of the operation, from the NetApp Console menu, select *Administration* > *Audit*. 
+
+
+== Steps from the NetApp Console Systems page
+
+. From the NetApp Console Systems page, select the working environment.
+. Select the source system and drag it to the destination.
+image:drag-n-drop.png[drag and drop functionality to create cache]
+. Select *Volume caching*. 
++
+This creates a cache volume from the source to the destination. 
+
+. In the right pane, in the Caching option box, select *Add*. 
+
+. In the Cache data page, select the system you want to cache and select *Start cache wizard*.
+image:cache-data.png[cache data pop-up]
+. In the Configure your caches page, select the volume or volumes you want to cache. 
+
++
+NOTE: You can select up to 50 volumes.
+
+. Scroll down the page to make additional changes to the VM details or volume size. 
+. Enter the size for cache volumes as a percentage of the source volume size. 
++
+TIP: A good rule of thumb is that the cache volume size should be about 15% of the source volume size.
++
+image:create-cache.png[window for adding cache]
++
+. Check the *Cache access* box to replicate the NFS export policy rules and the SMB/CIFS share configuration from the source volume to the target cache volume. 
++
+Then the NFS export policy rules and SMB/CIFS share in the source volume will be replicated to the cache volume. If the SMB/CIFS protocol isn't enabled on the cache storage VM, the SMB/CIFS share will not replicate. 
++
+. Optionally, enter the cache name prefix. 
++
+The suffix of `pass:macros[_cache]` is appended to the name in the format: `<user-specified prefix>_<source volume name>_cache`
+
+
+
+. Select *Create caches*. 
++
+The new cache appears on the Caching list. The cache volume name will show `pass:macros[_cache]` as a suffix to the source volume name. 
+
+. To see the progress of the operation, from the NetApp Console menu, select *Administration* > *Audit*. 

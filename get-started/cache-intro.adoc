@@ -1,0 +1,75 @@
+---
+sidebar: sidebar
+permalink: get-started/cache-intro.html
+keywords: how volume caching works, what is volume caching, bluexp
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+
+---
+
+= Learn about volume caching
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Volume caching, a feature of ONTAP 9 software, is a remote caching capability that simplifies file distribution, reduces WAN latency by bringing resources closer to where your users and compute resources are, and lowers WAN bandwidth costs. Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly. 
+
+
+With volume caching, you have caching capabilities for the cloud, specifically for Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and on-premises as working environments. 
+
+Volume caching also provides branch office access to corporate datasets. By serving _hot data_, data that needs to be accessed frequently from multiple controllers in a cluster, you can increase the performance delivered to key applications. And, by caching hot data local to users at multiple locations around the world, you can enhance their collaboration by enabling simultaneous access to centralized datasets while also reducing the response time they receive when accessing the hot data. 
+
+//image:abc.png[Diagram showing components of the Volume caching]
+
+== NetApp Console
+ 
+Volume caching is accessible through the NetApp Console.
+ 
+The NetApp Console provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console administrators can control access to storage and services for all systems within the enterprise.
+ 
+You don’t need a license or subscription to start using NetApp Console and you only incur charges when you need to deploy Console agents in your cloud to ensure connectivity to your storage systems or NetApp data services. However, some NetApp data services accessible from the Console are licensed or subscription-based.
+ 
+Learn more about the https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[NetApp Console]. 
+
+
+
+== What is a cache? 
+
+A cache is a temporary storage location that resides between a host and the source of data. The objective of a cache is to store frequently accessed portions of source data in a way that allows the data to be served faster than it would be by fetching the data from the source. Caches are most beneficial in read-intensive environments where data is accessed more than once and is shared by multiple hosts. A cache system is faster than the system with data source, which is achieved through a faster storage system and proximity of the cache storage space to the host. 
+
+== Benefits of volume caching
+
+Volume caching offers the following benefits:
+
+* Accelerate performance in a hybrid cloud infrastructure 
+* Remove cloud silos by caching data from one cloud provider to another 
+* Lower storage costs 
+* Collaborate across geographic locations 
+* Ability to adapt to changing IT environments faster 
+* On-demand or subscription-based volume caching hosted in the cloud 
+
+== What you can do with volume caching 
+
+Volume caching provides you with full use of several NetApp technologies to accomplish the following goals: 
+
+* Cache data from one cloud provider to another 
+* View and edit a cache export policy 
+* Resize an existing cache 
+* Delete a cache 
+
+== Cost
+
+NetApp doesn't charge you for volume caching, but you’ll need to check your cloud provider for applicable data ingress and egress charges. 
+
+== Licensing
+No special ONTAP licenses are needed for volume caching.
+
+== How volume caching works
+
+A cache volume is a sparsely populated volume that is backed by a source volume. The cache volume can be on the same cluster as or on a different cluster than that of the source volume. 
+
+The cache volume provides access to data in the source volume without requiring that all the data be in the cache volume. Data storage in the caching volume is efficiently managed by retaining only the hot data (working, or recently used data). 
+
+Volume caching reads requests if the cache volume contains the data requested by the client. Otherwise, the volume caching service requests the data from the source volume and stores the data before serving the client request. Subsequent requests for the data are then served directly from the cache volume. This improves performance when the same data is accessed repeatedly, because after the first request, the data no longer must travel across the network or be served from an overloaded system. 
+
+

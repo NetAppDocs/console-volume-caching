@@ -1,0 +1,6 @@
+=== BlueXP volume caching
+BlueXP volume caching, a feature of ONTAP 9 software, is a remote caching capability that simplifies file distribution, reduces WAN latency by bringing resources closer to where your users and compute resources are, and lowers WAN bandwidth costs. Volume caching provides a persistent, writable volume in a remote place. You can use BlueXP volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly. 
+
+With BlueXP volume caching, you have caching capabilities for the cloud, specifically for Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and on-premises as working environments.
+
+link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html[Learn more about Volume caching].

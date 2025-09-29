@@ -1,0 +1,15 @@
+section: get-started
+title: Get started
+entries:
+  - title: Learn about volume caching
+    url: /get-started/cache-intro.html
+  - title: Prerequisites
+    url: /get-started/cache-prerequisites.html
+  - title: Quick start
+    url: /get-started/cache-quick-start.html
+  - title: Set up volume caching
+    url: /get-started/cache-setup.html 
+  - title: Access the volume caching option
+    url: /get-started/cache-login.html
+  - title: FAQ
+    url: /get-started/cache-faq.html 

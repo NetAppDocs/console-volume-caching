@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: use/cache-use-overview.html
+keywords: volume caching, volume caching
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+---
+
+= Use volume caching overview
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Using volume caching, you can accomplish the following goals: 
+
+* link:../use/cache-create.html[Create a cache].
+* link:../use/cache-manage.html#view-cache-details[View cache details].
+* link:../use/cache-manage.html#assign-a-different-cache-export-policy[Change the export policy and resize a cache].
+* link:../use/cache-manage.html#delete-a-volume-cache[Delete a cache].
+* link:../use/monitor-jobs.html[Monitor volume caching operations] on the NetApp Console Audit page.
+

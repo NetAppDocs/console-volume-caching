@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: get-started/cache-login.html
+keywords: bluexp login, volume caching log in
+summary: Get started with volume caching by accessing the service in the NetApp Console.
+---
+
+= Access volume caching
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You use the NetApp Console to access the volume caching option.
+
+To log in to the NetApp Console, you can use your NetApp Support Site credentials. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html[Learn more about logging in^].
+
+.Steps
+
+. Open a web browser and go to the https://console.netapp.com/[NetApp console^].
++ 
+The NetApp Console login page appears.
+
+. Log in to the Console. 
+. From the Console left navigation, select *Mobility* > *Volume caching*. 
++
+The volume caching Dashboard appears.
+image:landing-page.png[image of the landing page for volume-caching]
++
+NOTE: If a Console agent is not set up, the option *Add a Console agent* appears. Refer to link:../get-started/cache-setup.html[Set up volume caching].

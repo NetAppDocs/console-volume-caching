@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: get-started/cache-prerequisites.html
+keywords: what are volume caching requirements, volume caching prerequisites
+summary: Get started with volume caching by verifying support for your environment, network access, login and web browser.
+---
+
+= Volume caching prerequisites
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Get started by verifying the readiness of your operational environment, login, network access, and web browser.
+
+To use volume caching, you should ensure that your environment meets all requirements.
+
+* ONTAP 9.8 and later
+** Cluster Admin ONTAP permissions
+** Intercluster LIFs on the clusters
+
+* In the NetApp Console: 
+
+**	The Console agent needs to be set up in the NetApp Console. All source and target clusters must be on the same Console agent. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^]. 
+
+** The working environment should be set up.  
+
+** The clusters should be added in the target working environment and in an ON or degraded state.  
+
+** Standard NetApp Console requirements. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[NetApp Console requirements^].  
+
+
+
+
+

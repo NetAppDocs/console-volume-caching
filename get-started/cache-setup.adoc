@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: get-started/cache-setup.html
+keywords: bluexp, volume caching, 
+summary: To use volume caching, perform a few steps to set it up.    
+---
+
+= Set up volume caching
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To use volume caching, perform a few steps to set it up.  
+
+
+* Review link:../get-started/cache-prerequisites.html[prerequisites] to ensure that your environment is ready.
+* Create a Console agent.
+* Create systems that can support volume caching.
+
+
+== Create a Console agent in the NetApp Console
+The next step is to create a Console agent in the NetApp Console.
+
+To create a Console agent before using volume caching, refer to the NetApp Console documentation that describes https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector[How to create a Console agent^]. 
+
+
+== Create systems 
+
+If you haven't done so already, you need to create the systems for the source and target. 
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html[Create an Amazon FSx for ONTAP system^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[Launch Cloud Volumes ONTAP in AWS^] 
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[Launch Cloud Volumes ONTAP in Azure^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[Launch Cloud Volumes ONTAP in GCP^] 
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems^]  
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Discover ONTAP clusters^] 
+
+
+
+

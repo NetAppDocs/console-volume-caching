@@ -1,14 +1,40 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  lead: Volume caching provides a persistent, writable volume in a remote place. You can use volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+  tiles:
+  - title: Get started
+    #image: ./media/outline_directions_run_black_18dp.png
+    links:
+    - title: Learn about volume caching
+      url: /get-started/cache-intro.html
+    - title: What's new in volume caching
+      url: /release-notes/cache-whats-new.html
+#   - title: Release notes
+#     url: /release-notes/rn_overview.html
+    - title: Quick start
+      url: /get-started/cache-quick-start.html
+    - title: Prerequisites
+      url: /get-started/cache-prerequisites.html
+    - title: Access the volume caching option
+      url: /get-started/cache-login.html
+    - title: FAQ
+      url: /get-started/cache-faq.html
+  - title: Use volume caching
+    links:
+    - title: Use volume caching overview
+      url: /use/cache-use-overview.html
+    - title: Create a cache 
+      url: /use/cache-create.html
+    - title: Manage a cache 
+      url: /use/cache-manage.html
+    - title: Monitor volume caching jobs
+      url: /use/monitor-jobs.html 
+  - title: Blogs & community
+    links:
+    - title: NetApp Console
+      url: https://www.netapp.com/console
+    - title: NetApp Data Services
+      url: https://www.netapp.com/data-services/
+    - title: NetApp Community
+      url: https://community.netapp.com/
+          
+  
