@@ -11,17 +11,17 @@ summary: Volume caching provides a persistent, writable volume in a remote place
 :imagesdir: ../media/
 
 [.lead]
-You can create a volume caching between Amazon FSx for ONTAP, Cloud Volumes ONTAP, and on-premises ONTAP with one or more source volumes from the source system as the cache source. You then choose the storage virtual machine for the cache volumes. 
+Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cached volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly. You can create volume caching between Amazon FSx for ONTAP, Cloud Volumes ONTAP, and on-premises ONTAP with one or more source volumes from the source system as the cache source. You then choose the storage virtual machine for the cache volumes. 
 
-The cache volume can be on the same cluster or a different cluster than that of the source volume. The volumes you select to cache must belong to the same storage VM and the storage VMs must use the same protocols. 
+The cached volume can be on the same cluster or a different cluster than that of the source volume. The volumes you select to cache must belong to the same storage VM and the storage VMs must use the same protocols. 
 
 TIP: If volumes are not eligible for caching, they are greyed out so that you cannot select them. 
 
-You can enter the size for cache volumes as a percentage of source volume size. 
+You can enter the size for cached volumes as a percentage of source volume size. 
 
-NOTE: The IPSpace used by the cache volume depends on the IPSpace used by the source storage VM. 
+NOTE: The IPSpace used by the cached volume depends on the IPSpace used by the source storage VM. 
 
-The cache volume name uses a suffix of `pass:macros[_cache]` added to the original volume name. 
+The cached volume name uses a suffix of `pass:macros[_cache]` added to the original volume name. 
 
 
 == Steps from the volume caching landing page
