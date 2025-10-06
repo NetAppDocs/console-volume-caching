@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: get-started/cache-faq.html
+keywords: volume caching faq, caching frequently asked questions
+summary: This FAQ can help if you're just looking for a quick answer to a question.
+---
+
+= Frequently asked questions for volume caching
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This FAQ can help if you're just looking for a quick answer to a question.
+
+
+
+*What's the volume caching URL?*
+For the URL, in a browser, enter: https://console.netapp.com/[https://console.netapp.com/^] to access the BlueXP console. 
+
+
+*Do you need a license to use volume caching?*
+A NetApp License File (NLF) is not required.
+
+*How do you enable volume caching?*
+Volume caching does not require any enablement. The volume caching option automatically appears on the NetApp Console left navigation.
+

@@ -1,0 +1,115 @@
+---
+sidebar: sidebar
+permalink: use/cache-manage.html
+keywords: volume caching, Volume caching
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+---
+
+= Manage a cache
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can edit a cache, change the export policy, resize a cache, and delete a cache.  
+
+With volume caching, you can accomplish these goals:  
+
+* View cache details. 
+* Assign a different export policy to a cache.  
+* Edit a volume caching and change its size, etc. Edit will have the option to view and change other properties, and more properties will be added in edit in upcoming releases. 
+* Resize an existing cache based on a percentage of the original volume size. 
+* Delete a cache.  
+
+== View cache details
+
+For each caching, you can see the original volume, the working environment, the cache volume, and more. 
+
+.Steps 
+
+. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
++
+You can view the list of cache volumes created at the destination system. The list of caches displays the cache details.  
+
+. To filter the list, select the *Filter by +* option. 
+
+. Select a row and select the *Actions …* option on the right.  
+
+. Select *View and edit details*. 
+
+. Review the details.  
+
+== Edit a cache
+You can change the name, volume size, and export policy for a cache. 
+
+.Steps
+
+. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+
+. Select a row and select the *Actions …* option on the right.  
+
+. Select *View and edit details*. 
+
+. In the Basic configuration tab, optionally, change the cache name and cache volume size.
+
+. Optionally, expand the Cache access tab, and modify these values: 
+.. The mount path. 
+.. An export policy that is different from the existing one.  
+
+. To change SMB/CIFS share details or the export policy rules, click the option to access NetApp System Manager.  
+
+. Select *Save*.   
+
+== Assign a different cache export policy 
+
+You can assign a different export policy to a cache.  
+
+The source export policy rules should be applied to the target cluster.  
+
+TIP: You can assign an existing export policy to a cache. You cannot change the export policy rules. If you need to change the export policies, you can use NetApp System Manager.
+
+.Steps
+
+. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+
+. Select a row and select the *Actions …* option on the right.  
+
+. Select *Change export policy*.  
+
+. Select the export policy you want to assign to the cache.  
+
+. Select *Save*.
+
+== Resize a cache 
+
+You can change the size of the cache volume based on a percentage of the source volume.  
+
+.Steps
+
+. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+
+. Select a row and select the *Actions …* option on the right.  
+
+. Select *Resize*.  
+
+. Enter a new percentage of the origin volume size. 
++
+The cache volume will resize to the new percentage.   
+
+. Select *Save*.
+
+== Delete a cache 
+
+If you no longer need the cache, you can delete it. This deletes the volume caching relationship and deletes the target volume cache. 
+
+.Steps
+
+. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+
+. Select a row and select the *Actions …* option on the right.  
+
+. Select *Delete*.  
+
+. Check the box. 
+. Select *Delete*.
+

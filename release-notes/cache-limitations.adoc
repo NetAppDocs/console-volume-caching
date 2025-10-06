@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: release-notes/cache-limitations.html
+keywords: volume caching, bluexp
+summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
+---
+
+= Known limitations of volume caching
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
+
+== Limitation in copying cache export policy rules
+The cache export policy rules are not copied to the cache volume in the following situations:
+
+* When the source volume's system is Amazon FSx for NetApp ONTAP or Cloud Volumes ONTAP, and the cache volume is ONTAP 9.10.1 or earlier.
+* When the source volume's system is any version of ONTAP, and the cache volume is ONTAP 9.10.1 or earlier.
+
+Workaround: You should manually create the rules for the cache volume.
+
+== Cache creation fails for storage VMs with same name
+If the source and destination clusters use storage VMs with the same name, the cache is not created.
+
+Workaround: Use different names for the source and destination storage VMs.
+
+== Delay in displaying new or recently-edited export policies
+When creating a cache, you might not be able to see a recently-created or edited export policy on the list.
+
+Workaround: Retry in a few minutes.
+
+== Cache creation fails when destination has only CIFS protocol enabled
+Cache creation fails if the source or destination cluster has ONTAP 9.10.1 or earlier, and the destination cluster has only the CIFS protocol enabled.
+
+Workaround: Use a destination cluster running ONTAP 9.11.1 or later, or with both the CIFS and NFS protocols configured.
+

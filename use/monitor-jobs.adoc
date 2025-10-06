@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: use/monitor-jobs.html
+keywords: volume caching, NetApp Volume caching
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use NetApp Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+---
+
+= Monitor volume caching jobs on the Audit page
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can monitor all volume caching jobs and determine their progress by using the NetApp Console Audit page. 
+
+.Steps
+
+. From the NetApp Console menu, select *Administration* > *Audit*.
+
+
+. Optionally, filter by time, service, action, agent, resource, user, or status. 
+
+. Explore all caches and the operations. 
