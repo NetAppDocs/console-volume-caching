@@ -16,6 +16,5 @@ Using volume caching, you can accomplish the following goals:
 * link:../use/cache-create.html[Create a cache].
 * link:../use/cache-manage.html#view-cache-details[View cache details].
 * link:../use/cache-manage.html#assign-a-different-cache-export-policy[Change the export policy and resize a cache].
-* link:../use/cache-manage.html#delete-a-volume-cache[Delete a cache].
 * link:../use/monitor-jobs.html[Monitor volume caching operations] on the NetApp Console Audit page.
 
