@@ -1,28 +1,28 @@
 ---
 sidebar: sidebar
 permalink: get-started/cache-setup.html
-keywords: bluexp, volume caching, 
-summary: To use volume caching, perform a few steps to set it up.    
+keywords: bluexp, Volume Caching, 
+summary: To use Volume Caching, perform a few steps to set it up.    
 ---
 
-= Set up volume caching
+= Set up Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To use volume caching, perform a few steps to set it up.  
+To use Volume Caching, perform a few steps to set it up.  
 
 
 * Review link:../get-started/cache-prerequisites.html[prerequisites] to ensure that your environment is ready.
 * Create a Console agent.
-* Create systems that can support volume caching.
+* Create systems that can support Volume Caching.
 
 
 == Create a Console agent in the NetApp Console
 The next step is to create a Console agent in the NetApp Console.
 
-To create a Console agent before using volume caching, refer to the NetApp Console documentation that describes https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector[How to create a Console agent^]. 
+To create a Console agent before using Volume Caching, refer to the NetApp Console documentation that describes https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector[How to create a Console agent^]. 
 
 
 == Create systems 

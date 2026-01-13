@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: get-started/cache-prerequisites.html
-keywords: what are volume caching requirements, volume caching prerequisites
-summary: Get started with volume caching by verifying support for your environment, network access, login and web browser.
+keywords: what are Volume Caching requirements, Volume Caching prerequisites
+summary: Get started with Volume Caching by verifying support for your environment, network access, login and web browser.
 ---
 
 = Volume caching prerequisites
@@ -13,7 +13,7 @@ summary: Get started with volume caching by verifying support for your environme
 [.lead]
 Get started by verifying the readiness of your operational environment, login, network access, and web browser.
 
-To use volume caching, you should ensure that your environment meets all requirements.
+To use Volume Caching, you should ensure that your environment meets all requirements.
 
 * ONTAP 9.8 and later
 ** Cluster Admin ONTAP permissions
