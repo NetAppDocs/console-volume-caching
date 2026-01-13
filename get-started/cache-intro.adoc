@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 permalink: get-started/cache-intro.html
-keywords: how volume caching works, what is volume caching, bluexp
-summary: Volume caching provides a persistent, writable volume in a remote place. You can use volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+keywords: how Volume Caching works, what is Volume Caching, bluexp
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use Volume Caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
 
 ---
 
-= Learn about volume caching
+= Learn about Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: Volume caching provides a persistent, writable volume in a remote place
 Volume caching, a feature of ONTAP 9 software, is a remote caching capability that simplifies file distribution, reduces WAN latency by bringing resources closer to where your users and compute resources are, and lowers WAN bandwidth costs. Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly. 
 
 
-With volume caching, you have caching capabilities for the cloud, specifically for Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and on-premises as working environments. 
+With Volume Caching, you have caching capabilities for the cloud, specifically for Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and on-premises as working environments. 
 
 Volume caching also provides branch office access to corporate datasets. By serving _hot data_, data that needs to be accessed frequently from multiple controllers in a cluster, you can increase the performance delivered to key applications. And, by caching hot data local to users at multiple locations around the world, you can enhance their collaboration by enabling simultaneous access to centralized datasets while also reducing the response time they receive when accessing the hot data. 
 
@@ -37,7 +37,7 @@ Learn more about the https://docs.netapp.com/us-en/bluexp-setup-admin/concept-ov
 
 A cache is a temporary storage location that resides between a host and the source of data. The objective of a cache is to store frequently accessed portions of source data in a way that allows the data to be served faster than it would be by fetching the data from the source. Caches are most beneficial in read-intensive environments where data is accessed more than once and is shared by multiple hosts. A cache system is faster than the system with data source, which is achieved through a faster storage system and proximity of the cache storage space to the host. 
 
-== Benefits of volume caching
+== Benefits of Volume Caching
 
 Volume caching offers the following benefits:
 
@@ -46,9 +46,9 @@ Volume caching offers the following benefits:
 * Lower storage costs 
 * Collaborate across geographic locations 
 * Ability to adapt to changing IT environments faster 
-* On-demand or subscription-based volume caching hosted in the cloud 
+* On-demand or subscription-based Volume Caching hosted in the cloud 
 
-== What you can do with volume caching 
+== What you can do with Volume Caching 
 
 Volume caching provides you with full use of several NetApp technologies to accomplish the following goals: 
 
@@ -59,17 +59,17 @@ Volume caching provides you with full use of several NetApp technologies to acco
 
 == Cost
 
-NetApp doesn't charge you for volume caching, but you’ll need to check your cloud provider for applicable data ingress and egress charges. 
+NetApp doesn't charge you for Volume Caching, but you’ll need to check your cloud provider for applicable data ingress and egress charges. 
 
 == Licensing
-No special ONTAP licenses are needed for volume caching.
+No special ONTAP licenses are needed for Volume Caching.
 
-== How volume caching works
+== How Volume Caching works
 
 A cache volume is a sparsely populated volume that is backed by a source volume. The cache volume can be on the same cluster as or on a different cluster than that of the source volume. 
 
 The cache volume provides access to data in the source volume without requiring that all the data be in the cache volume. Data storage in the caching volume is efficiently managed by retaining only the hot data (working, or recently used data). 
 
-Volume caching reads requests if the cache volume contains the data requested by the client. Otherwise, the volume caching service requests the data from the source volume and stores the data before serving the client request. Subsequent requests for the data are then served directly from the cache volume. This improves performance when the same data is accessed repeatedly, because after the first request, the data no longer must travel across the network or be served from an overloaded system. 
+Volume caching reads requests if the cache volume contains the data requested by the client. Otherwise, the Volume Caching service requests the data from the source volume and stores the data before serving the client request. Subsequent requests for the data are then served directly from the cache volume. This improves performance when the same data is accessed repeatedly, because after the first request, the data no longer must travel across the network or be served from an overloaded system. 
 
 
