@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar
 permalink: get-started/cache-quick-start.html
-keywords: how to get started with volume caching, volume caching quick start
-summary: Get started with volume caching in a few steps.
+keywords: how to get started with Volume Caching, Volume Caching quick start
+summary: Get started with Volume Caching in a few steps.
 ---
 
-= Quick start for volume caching
+= Quick start for Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Here's an overview of the steps needed to get started with volume caching. The links within each step take you to a page that provides more details.
+Here's an overview of the steps needed to get started with Volume Caching. The links within each step take you to a page that provides more details.
 
 
 
@@ -22,7 +22,7 @@ link:../get-started/cache-prerequisites.html[Ensure your environment meets these
  
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up volume caching
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Volume Caching
 
 
 [role="quick-margin-para"]
@@ -39,6 +39,6 @@ Here's what you might do next.
 [role="quick-margin-list"]
 * link:../use/cache-create.html[Create a cache].
 * link:../use/cache-use-overview.html[Manage a cache, edit a cache, resize a cache, or delete a cache].
-* link:../use/monitor-jobs.html[Monitor volume caching operations].
+* link:../use/monitor-jobs.html[Monitor Volume Caching operations].
 
 

@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: release-notes/cache-limitations.html
-keywords: volume caching, bluexp
+keywords: Volume Caching, bluexp
 summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
 ---
 
-= Known limitations of volume caching
+= Known limitations of Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

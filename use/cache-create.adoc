@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar
 permalink: use/cache-create.html
-keywords: volume caching, Volume caching
+keywords: Volume Caching, Volume caching
 summary: Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
 ---
 
-= Create a cache using volume caching
+= Create a cache using Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cached volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly. You can create volume caching between Amazon FSx for ONTAP, Cloud Volumes ONTAP, and on-premises ONTAP with one or more source volumes from the source system as the cache source. You then choose the storage virtual machine for the cache volumes. 
+Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cached volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly. You can create Volume Caching between Amazon FSx for ONTAP, Cloud Volumes ONTAP, and on-premises ONTAP with one or more source volumes from the source system as the cache source. You then choose the storage virtual machine for the cache volumes. 
 
 The cached volume can be on the same cluster or a different cluster than that of the source volume. The volumes you select to cache must belong to the same storage VM and the storage VMs must use the same protocols. 
 
@@ -24,17 +24,17 @@ NOTE: The IPSpace used by the cached volume depends on the IPSpace used by the s
 The cached volume name uses a suffix of `pass:macros[_cache]` added to the original volume name. 
 
 
-== Steps from the volume caching landing page
+== Steps from the Volume Caching landing page
 
 . Log in to the NetApp Console. 
 . Select *Mobility* > *Volume caching* from the left navigation. 
 +
-You'll land on the volume caching Dashboard page. When you first start with the volume caching option, you need to add the cache information. Later, the Dashboard appears instead and displays data about the caches. 
+You'll land on the Volume Caching Dashboard page. When you first start with the Volume Caching option, you need to add the cache information. Later, the Dashboard appears instead and displays data about the caches. 
 
 +
 NOTE: If you have not yet set up a NetApp Console agent, the option *Add a Console agent* appears instead of the *Add a cache*. In this case, you need to set up the Console agent first. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[NetApp Console Quick start^].
 +
-image:landing-page.png[the landing page for volume caching]
+image:landing-page.png[the landing page for Volume Caching]
 +
 . Select *Add a cache*. 
 

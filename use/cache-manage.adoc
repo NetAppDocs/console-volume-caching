@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: use/cache-manage.html
-keywords: volume caching, Volume caching
-summary: Volume caching provides a persistent, writable volume in a remote place. You can use volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
+keywords: Volume Caching, Volume caching
+summary: Volume caching provides a persistent, writable volume in a remote place. You can use Volume Caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
 ---
 
 = Manage a cache
@@ -13,11 +13,11 @@ summary: Volume caching provides a persistent, writable volume in a remote place
 [.lead]
 You can edit a cache, change the export policy, resize a cache, and delete a cache.  
 
-With volume caching, you can accomplish these goals:  
+With Volume Caching, you can accomplish these goals:  
 
 * View cache details. 
 * Assign a different export policy to a cache.  
-* Edit a volume caching and change its size, etc. Edit will have the option to view and change other properties, and more properties will be added in edit in upcoming releases. 
+* Edit a Volume Caching and change its size, etc. Edit will have the option to view and change other properties, and more properties will be added in edit in upcoming releases. 
 * Resize an existing cache based on a percentage of the original volume size. 
 * Delete a cache.  
 
@@ -44,7 +44,7 @@ You can change the name, volume size, and export policy for a cache.
 
 .Steps
 
-. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+. From the NetApp Console left navigation, select *Mobility* > *Volume Caching*. 
 
 . Select a row and select the *Actions …* option on the right.  
 
@@ -70,7 +70,7 @@ TIP: You can assign an existing export policy to a cache. You cannot change the 
 
 .Steps
 
-. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+. From the NetApp Console left navigation, select *Mobility* > *Volume Caching*. 
 
 . Select a row and select the *Actions …* option on the right.  
 
@@ -86,7 +86,7 @@ You can change the size of the cache volume based on a percentage of the source 
 
 .Steps
 
-. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+. From the NetApp Console left navigation, select *Mobility* > *Volume Caching*. 
 
 . Select a row and select the *Actions …* option on the right.  
 
@@ -100,11 +100,11 @@ The cache volume will resize to the new percentage.
 
 == Delete a cache 
 
-If you no longer need the cache, you can delete it. This deletes the volume caching relationship and deletes the target volume cache. 
+If you no longer need the cache, you can delete it. This deletes the Volume Caching relationship and deletes the target volume cache. 
 
 .Steps
 
-. From the NetApp Console left navigation, select *Mobility* > *Volume caching*. 
+. From the NetApp Console left navigation, select *Mobility* > *Volume Caching*. 
 
 . Select a row and select the *Actions …* option on the right.  
 

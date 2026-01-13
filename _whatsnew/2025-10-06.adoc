@@ -1,6 +1,6 @@
-=== BlueXP volume caching is now volume caching
+=== BlueXP Volume Caching is now Volume Caching
 
-BlueXP volume caching has been renamed to volume caching.
+BlueXP Volume Caching has been renamed to Volume Caching.
 
 You can access it from the NetApp Console left navigation bar by selecting *Mobility* > *Volume caching*.
 
