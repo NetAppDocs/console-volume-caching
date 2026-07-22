@@ -21,7 +21,7 @@ To use Volume Caching, you should ensure that your environment meets all require
 
 * In the NetApp Console: 
 
-**	The Console agent needs to be set up in the NetApp Console. All source and target clusters must be on the same Console agent. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^]. 
+**	The Console agent needs to be set up in the NetApp Console. All source and target clusters must be on the same Console agent. Refer to thelink:https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html[Getting started workflow for NetApp Console^] and link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html[Learn about Console agents^]. 
 
 ** The working environment should be set up.  
 
