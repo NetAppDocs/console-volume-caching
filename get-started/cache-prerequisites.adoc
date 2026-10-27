@@ -5,7 +5,7 @@ keywords: what are Volume Caching requirements, Volume Caching prerequisites
 summary: Get started with Volume Caching by verifying support for your environment, network access, login and web browser.
 ---
 
-= Volume caching prerequisites
+= Prerequisites for NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

@@ -5,7 +5,7 @@ keywords: Volume Caching, bluexp
 summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
 ---
 
-= Known limitations of Volume Caching
+= Known limitations of NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

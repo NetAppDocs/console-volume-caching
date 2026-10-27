@@ -5,7 +5,7 @@ keywords: Volume Caching faq, bluexp, Volume Caching frequently asked questions
 summary: Volume caching provides a persistent, writable volume in a remote place. You can use Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
 ---
 
-= What's new in Volume Caching
+= What's new in NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

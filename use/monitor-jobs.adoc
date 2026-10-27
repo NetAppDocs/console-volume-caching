@@ -5,7 +5,7 @@ keywords: Volume Caching, NetApp Volume caching
 summary: Volume caching provides a persistent, writable volume in a remote place. You can use NetApp Volume caching to speed up access to data or to offload traffic from heavily accessed volumes. Cache volumes are ideal for read-intensive workloads, especially where clients need to access the same data repeatedly.
 ---
 
-= Monitor Volume Caching jobs on the Audit page
+= Monitor NetApp Volume Caching jobs on the Audit page
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
