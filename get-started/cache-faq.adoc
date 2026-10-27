@@ -5,7 +5,7 @@ keywords: Volume Caching faq, caching frequently asked questions
 summary: This FAQ can help if you're just looking for a quick answer to a question.
 ---
 
-= Frequently asked questions for Volume Caching
+= Frequently asked questions about NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

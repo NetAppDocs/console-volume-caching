@@ -5,7 +5,7 @@ keywords: bluexp login, Volume Caching log in
 summary: Get started with Volume Caching by accessing the service in the NetApp Console.
 ---
 
-= Access Volume Caching
+= Access NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
