@@ -21,8 +21,6 @@ indexpage:
       url: /get-started/cache-faq.html
   - title: Use Volume Caching
     links:
-    - title: Use volume Caching overview
-      url: /use/cache-use-overview.html
     - title: Create a cache 
       url: /use/cache-create.html
     - title: Manage a cache 
