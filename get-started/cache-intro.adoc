@@ -6,7 +6,7 @@ summary: Volume caching provides a persistent, writable volume in a remote place
 
 ---
 
-= Learn about Volume Caching
+= Learn about NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

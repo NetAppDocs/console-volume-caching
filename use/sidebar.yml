@@ -1,8 +1,6 @@
 section: use
 title: Use Volume Caching 
 entries:
-  - title: Use Volume Caching overview 
-    url: /use/cache-use-overview.html
   - title: Create a cache 
     url: /use/cache-create.html
   - title: Manage a cache 

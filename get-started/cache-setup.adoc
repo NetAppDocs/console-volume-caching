@@ -5,7 +5,7 @@ keywords: bluexp, Volume Caching,
 summary: To use Volume Caching, perform a few steps to set it up.    
 ---
 
-= Set up Volume Caching
+= Set up NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/

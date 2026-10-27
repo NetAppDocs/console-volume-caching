@@ -5,7 +5,7 @@ keywords: how to get started with Volume Caching, Volume Caching quick start
 summary: Get started with Volume Caching in a few steps.
 ---
 
-= Quick start for Volume Caching
+= Quick start for NetApp Volume Caching
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
@@ -38,7 +38,7 @@ Here's what you might do next.
 
 [role="quick-margin-list"]
 * link:../use/cache-create.html[Create a cache].
-* link:../use/cache-use-overview.html[Manage a cache, edit a cache, resize a cache, or delete a cache].
+* link:../use/cache-manage.html[Manage a cache].
 * link:../use/monitor-jobs.html[Monitor Volume Caching operations].
 
 
